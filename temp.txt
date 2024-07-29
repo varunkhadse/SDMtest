@@ -1,0 +1,27 @@
+q1. create student management MVCapplication
+
+1. use any database
+2. create table with respective columns as mention below
+3. (studentNo, Name, section, breanch, emailed) StudentNo Column as as identity auto increment.
+4. use ado net to connect with database.
+5. use proper exception handling and validation
+
+
+q2. create following 3 view create, index, delete in the application
+
+A. Student Create viedw:
+this view will be used to add new student details to the database.
+all field are mandatory add UI validations for each field.
+if text boxes are empty on click of add should show validation message.
+
+B. Student index view
+
+pull the students information from databse create list view as below
+
+
+C. Delete student information from database
+
+on click on delete actionable link it should delete the student information from database.
+
+
+Display the student details:
