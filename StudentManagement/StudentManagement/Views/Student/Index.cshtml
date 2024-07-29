@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Student>
+
+<h2>Student List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student No</th>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Branch</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.StudentNo</td>
+                <td>@student.Name</td>
+                <td>@student.Section</td>
+                <td>@student.Branch</td>
+                <td>@student.Email</td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = student.StudentNo })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
